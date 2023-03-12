@@ -2,14 +2,20 @@ package Pizza;
 
 public class Circle implements IShape{
     double _radius;
-    Circle(double r){
-        _radius= r;
+
+    public Circle(double somsac) {
+        this._radius = somsac;
     }
+
     @Override
     public double getArea() {
-        return 3.14*_radius*_radius;
+        return 3.14 * _radius *_radius;
     }
-    public String toString(){
-        return "Circle(h="+ _radius+", w =" + _radius+")";
+
+    @Override
+    public String toString() {
+        return "Hinh tron co ban kinh:" + _radius;
     }
 }
+
+

@@ -1,19 +1,17 @@
 package Pizza;
 
-public class Pizza {
+public class Pizza implements IShape {
     double _price;
-    IShape _shape;
-    public Pizza(double p, IShape s){
-        _price=p;
-        _shape=s;
+    IShape _Shape;
+
+    public Pizza(double p,double s) {
+        _price = p;
+        _Shape = s;
     }
-    public  double getPrice(){
-        return _price;
+
+    @Override
+    public double getArea() {
+        return 0;
     }
-    public IShape getshape(){
-        return _shape;
-    }
-    public String toString(){
-        return  "Pizza(price ="+_price+ ", Size ="+getshape()+")";
-    }
+
 }
